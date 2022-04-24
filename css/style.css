@@ -40,4 +40,5 @@ label {
 
 #check:checked + span:before {
     opacity: 1;
+    /* comment */
 }
