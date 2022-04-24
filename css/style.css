@@ -1,0 +1,43 @@
+body {
+    box-sizing: border-box;
+}
+
+
+.container {
+    max-width: 1200px;
+    padding: 10px;
+    margin: 0 auto;
+}
+
+label {
+    position: relative;
+    padding-left: 20px;
+    cursor: pointer;
+}
+
+#check {
+    display: none;
+}
+
+#check + span {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 20px;
+    height: 20px;
+}
+
+#check + span:before {
+    content: '\2713';
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    opacity: 0;
+    transition: opacity .3s ease-in-out;
+}
+
+#check:checked + span:before {
+    opacity: 1;
+}
